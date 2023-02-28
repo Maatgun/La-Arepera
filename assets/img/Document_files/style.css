@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*---HEADER---*/
+header nav {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(215, 201, 201, 0.241);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav img {
+    width: 85px;
+    transition: 2s;
+}
+
+header nav img:hover {
+    transform: scale(1.3);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+    transition: 2s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.3);
+}
+
+
+
+/*---MAIN---*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(rgba(5, 5, 5, 0.058), rgb(5, 5, 5)), url(./assets/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 80px;
+    padding: 20px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.grid-galeria {
+    margin-top: 50px;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-auto-rows: 250px;
+
+    gap: 15px;
+    margin: 30px;
+}
+
+.grid-galeria div img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(5, 5, 5, 0.247);
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+.historia-producto,
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 15px;
+    padding: 20px;
+
+}
+
+#historia-producto,
+p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.box {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+
+
+}
+
+.cajas {
+    width: 400px;
+    height: 320px;
+    padding: 40px 30px;
+    display: inline-block;
+    text-align: center;
+    background: rgb(233, 224, 224);
+    border-radius: 10px;
+}
+
+.box img {
+    width: 300px;
+}
+
+.cajas h3 {
+    font-size: 20px;
+}
+
+.cajas p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container-data {
+    display: flex;
+    justify-content: center;
+}
+
+
+.data,
+h2 {
+    font-weight: 600;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.data,
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.imagen-dato {
+    padding: 20px;
+}
+
+.more-info h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.more-info p {
+    text-align: var(1, 2)
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+}
+
+.arepa-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+
+}
+
+.informate h2 {
+    font-size: 1.5rem;
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;
+    background: rgb(110, 126, 130);
+    background: linear-gradient(90deg, rgba(110, 126, 130, 0.5914740896358543) 0%, rgba(244, 244, 249, 0.9836309523809523) 100%, rgba(0, 255, 222, 1) 100%);
+}
+
+
+.informate h2:hover{
+    
+    transform:scale(1.5)
+}
+.informate p {
+    text-align: justify;
+    margin: 10px;
+    padding: 30px;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 5px;
+
+    
+}
+
+.contacto-container h2{
+    padding-bottom: 15px;
+    font-size: 30px;
+    min-width: 300px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contacto-container form{
+    display:flex;
+    flex-direction: column;
+}
+.iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iframe h4{
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.iframe p{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*---FOOTER---*/
+
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.redes a img {
+    width: 100%;
+    height: 35px;
+    transition: 2s;
+}
+
+.redes a img:hover {
+    transform: scale(1.2);
+}
+
+.parrafo p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+
+}
+
+/*----MEDIA QUERIES----*/
+
+@media (max-width: 992px) {
+
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li a {
+    font-size: 15px;
+}
+
+header nav img{
+    width: 55px;
+    align-items: center;
+    margin: 15px;
+}
+
+.grid-galeria {
+    margin-top: 50px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 250px;
+
+    gap: 15px;
+    margin: 30px;
+}
+ 
+.img-8 {
+    grid-column: span 2;
+}
+
+.grid-item h3 {
+    font-size: 14px;
+}
+
+.imagen-dato {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.data, p {
+    font-size: 14px;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 768px) {
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-weight: 300;
+        font-size: 45px;
+    }
+
+    .hero a {
+        margin: 25px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .parrafo p {
+        font-size: 13px;
+    }
+
+    .grid-item h3{
+        font-size: 13px;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia-producto h1{
+        font-size: 1.5rem;
+    }
+
+    .historia-producto p {
+        font-size: 14px;
+        text-align:justify
+    }
+
+
+    .arepa-info, iframe{
+        display: flex;
+        flex-direction: column;
+        width: 625px;
+        height: 400px;
+    }
+
+    .cajas{
+        width: 280px;
+        height: 250px;
+    }
+
+    .cajas h3{
+        font-size: 15px;
+    }
+
+    .cajas p {
+        font-size: 9px;
+        text-align: center;
+        margin: 8px;
+    }
+
+    .box img{
+        width: 200px;
+
+    }
+
+    .more-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .data, p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .data, h2 {
+        font-size: 25px;
+        
+    }
+
+    .container-data {
+        display: flex;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 576px) {
+
+    
+    header nav ul li a {
+        font-size: 11px;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero a {
+        margin: 15px;
+        padding: 8px;
+        border-radius: 15px;
+    }
+    
+    
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.redes a img {
+    width: 100%;
+    height: 25px;
+}
+
+.parrafo p {
+    font-size: 10px;
+}
+
+.grid-item h3{
+    font-size: 11px;
+}
+
+
+.arepa-info, iframe{
+    width: 485px;
+    height: 400px;
+}
+}
+
+@media (max-width: 450px) {
+    header nav ul li a {
+        font-size: 9px;
+    }
+
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .redes a img {
+        width: 100%;
+        height: 25px;
+    }
+    
+    .parrafo p {
+        font-size: 8px;
+    }
+
+    .hero h2 {
+        font-weight: 300;
+        font-size: 35px;
+    }
+
+    .hero a {
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .grid-galeria {
+    
+        grid-template-columns: repeat(1, 1fr);
+    
+        grid-auto-rows: 250px;
+    
+        gap: 15px;
+        margin: 30px;
+    }
+    
+    
+    .arepa-info, iframe{
+        display: flex;
+        flex-direction: column;
+        width: 355px;
+        height: 430px;
+    }
+
+    .data, p{
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .historia-producto, p {
+        font-size: 11px;
+    }
+    }
