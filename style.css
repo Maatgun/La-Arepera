@@ -296,7 +296,7 @@ p {
     width: 400px;
     height: 420px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     background: rgba(248, 248, 246, 0.678);
     margin-top: 90px;
     box-shadow: 7px 13px 37px #000;
@@ -742,4 +742,5 @@ p{
         width: 350px;
     }
     
+}
 }
